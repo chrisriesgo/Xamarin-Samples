@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{D0D645F4-1683-4C13-9361-AD8B4A4D7D02}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CalabashDemo</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\FirstPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\SecondPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ILoginService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\" />
+  </ItemGroup>
+</Project>
