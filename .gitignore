@@ -176,3 +176,5 @@ FakesAssemblies/
 *.userprefs
 .DS_Store
 *Resource.designer.cs
+
+screenshot_*.png
