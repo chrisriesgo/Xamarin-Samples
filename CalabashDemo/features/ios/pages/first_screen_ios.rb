@@ -15,5 +15,9 @@ class FirstScreen < Calabash::IBase
     touch(second_page_button)
     # page(SecondScreen).await
   end
+  
+  def tap_logout_button
+    touch("button label text:'Logout'")
+  end
 
 end
