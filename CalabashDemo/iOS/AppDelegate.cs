@@ -17,6 +17,9 @@ namespace CalabashDemo.Pages
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			Forms.Init();
+			#if DEBUG
+			Xamarin.Calabash.Start();
+			#endif
 
 			window = new UIWindow(UIScreen.MainScreen.Bounds);
 			

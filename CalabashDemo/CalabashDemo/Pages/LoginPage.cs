@@ -29,7 +29,7 @@ namespace CalabashDemo.Pages
 			Title = "Login";
 			BackgroundColor = Color.FromHex("ff7DC6CB");
 
-			_username = new Entry { Placeholder = "E-mail", WidthRequest = 250 };
+			_username = new Entry { Placeholder = "Email Address", WidthRequest = 250 };
 			_pw = new Entry { Placeholder = "Password", WidthRequest = 250, IsPassword = true };
 			_button = new Button { Text = "Log In" };
 
